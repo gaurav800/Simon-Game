@@ -12,7 +12,7 @@ body {
 
 .container {
   display: block;
-  width: 50%;
+  width: 80%;
   margin: auto;
 
 }
@@ -50,4 +50,15 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.play-button{
+  background-color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 5%;
+  height: 50px;
+  width: 150px;
+  border-radius: 5%;
+  outline: none;
+  border: 3px solid black;
 }

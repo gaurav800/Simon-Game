@@ -6,6 +6,17 @@ var started = false;
 
 //Waiting for a keystroke to start the game
 $(document).on("keydown", function() {
+  $(".play-button").slideUp();
+  if (!started) {
+    $("h1").text("Level " + levelCount);
+    nextSequence();
+    started = true;
+  }
+});
+
+//Waiting for user to click the Play Button
+$(".play-button").on("click",function(){
+  $(".play-button").slideUp();
   if (!started) {
     $("h1").text("Level " + levelCount);
     nextSequence();
@@ -75,6 +86,7 @@ function resetAll(){
   started = false;
   gamePattern=[];
   levelCount=0;
+  $(".play-button").text("Play again").slideDown();
 }
 
 //Function for playing sounds

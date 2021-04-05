@@ -9,7 +9,7 @@ $(document).on("keydown", function() {
   $(".play-button").slideUp();
   if (!started) {
     $("h1").text("Level " + levelCount);
-    nextSequence();
+    setTimeout(nextSequence,1000);
     started = true;
   }
 });
@@ -19,7 +19,7 @@ $(".play-button").on("click",function(){
   $(".play-button").slideUp();
   if (!started) {
     $("h1").text("Level " + levelCount);
-    nextSequence();
+    setTimeout(nextSequence,1000);
     started = true;
   }
 });
